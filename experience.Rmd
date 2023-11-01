@@ -7,6 +7,150 @@ output:
 ---
 
 
+### Education 
 
+**Columbia University | *M.S. Biostatistics | New York, New York | Expected Graduation May 2025***
 
+**Brown University | *Sc.B. Applied Mathematics - Biology | Providence, Rhode Island | Graduated May 2023***
 
+**Wellesley High School | *Wellesley, Massachusetts | Graduated May 2019***
+
+### Biostatistics and Data Science Experience 
+
+**Biostatistical Methods | *Columbia University | September 2023 - Present***
+
+- Learning biostatistical methods for applied uses including in-depth hypothesis testing, binomial proportion estimation, and ANOVA
+
+- Codes in R to produce data analysis
+
+**Data Science | *Columbia University | September 2023 - Present***
+
+- Produces complex R code to clean, visualize, and analyze large datasets
+
+- Completes rigorous weekly R projects and assignments 
+
+**Methods in Informatics and Data Science for Health | *Brown University | January 2023 - May 2023***
+
+- Worked with extremely large EHR data sets in order to clean, visualize, and analyze using Julia
+
+- Produced a full capstone report on *A Systematic Review of PubMed Publications* that tabulated all available melanoma lteraure on PubMed and extracted trends according to date of publication, publication topic, publication location, targeted gender, and other information 
+
+**Inference in Fenomics and Molecular Biology | *Brown University | September 2022 - December 2022***
+
+- Learned regression and compex data inference topics
+
+- Represented probability distributions and regression in MATLAB
+
+- Produced weekly rigorous homework problem sets to represent learning 
+
+**Biotechnology in Medicine | *Brown University | September 2021 - December 2021***
+
+- Learned about biotechnology practices, uses, and application and how it relates to the medical field
+
+- Designed and executed my own "mock" clinical trial 
+
+### Leadership Experience
+
+**CareerLAB - Peer Career Advisor | *Providence, Rhode Island | May 2021 - August 2023***
+
+- Advised fellow Brown University students on internship and job opportunities, networking and interviewing tipcs, Brown University resources, and resume critiques in daily walk-in hours
+
+- Led peer career advising for a cohort of 30+ other Peer Career Advisors
+
+- Ran presentations and workshops for 200+ attendees
+
+- Organized communications between athletic teams and Peer Career Advisors
+
+- Edited and updated CareerLAB webstie
+
+**Student Athlete Advisory Committee - Gymnastics Representative | *Providence, Rhode Island | May 2021 - May 2023***
+
+- Worked to make each athlete's voice and concerns heard in order to promote equality and justic for all individuals
+
+- Facilitated communication between the individual members of the women's gymnastics team and all the SAAC
+
+- Attended monthly brainstorming meetings with representatives from 34 other varsity sports 
+
+- Represented the gymnastics team among a committee of student-athletes who act as the voice for the student-athlete community at Brown, fostering a relationship between the athletic and academic community 
+
+**TeamIMPACT - Team Leader | *Providence, Rhode Island | May 2020 - May 2023***
+
+- Organized events for program that connects children with chronic illnesses to NCAA sports teams across the country
+
+- Facilitated all communication between Brown Gymnastics Team and their assigned IMPACT child and family
+
+- Taught underclassmen about the importance of the program 
+
+### Community Outreach Experience 
+
+**Crunch Fitness - Front Desk Associate, Opener, Closer | *New York, New York | August 2023 - Present***
+
+- Greets members and checks them into the gym
+
+- Completes Point of Sale transactions for the members
+
+- Organizes fitness class schedules
+
+- Cultivates a friendly and welcoming environment for all members and guests
+
+- Opens the gym at 5 am, organizes all equiptment, cleans gym, and prepares for arrival of members
+
+- Closes the gym at 10 pm, manages register, cleans gym 
+
+**Brown University Athletics - Student Tutor | *Providence, Rhode Island | March 2022 - May 2023***
+
+- Tutored 3+ student-athletes in math classes at Brown University on a weekly basis 
+
+- Taught methods on problem-solving
+
+- Created weekly lesson plans 
+
+**Dedham Animal Rescue League - Foster Parent | *Dedham, Massachusetts | March 2012 - Present***
+
+- Has completed over 5,000 hours of volunteer caring for dozens of animals since age 12
+
+- Responsible for care and socialization of kittens and puppies prior to adoption
+
+- In charge of veterinary visits and medical care of animals
+
+- Experience birthing kittens
+
+### Varsity Athletics 
+
+**Brown University Gymnastics Team - Captain & All-Around Competitor | *Providence, Rhode Island | September 2019 - May 2023***
+
+***Captain***
+
+- Elected captain by teammates and coaches
+
+- Cultivated a strongly-bonded family dynamic among the team in order to achieve success both on the mat and in the classroom 
+
+- Facilitated communication between coaches and athletes
+
+- Organized team events
+
+- Organized team bonding activities
+
+- Planned practice and lifting times 
+
+- Helped underclassmen navigate being a student-athlete at Brown
+
+- Led the team to winning the Ivy-League Championship for the first time since 2016
+
+***All-Around Competitor***
+
+- Consistently competed for the team every weekend for 15 weekends straight
+
+- Named Rookie of the Year 2019
+
+- WCGA Scholastic All-American Award Winner 2019-2020, 2020-2021, 2022-2023
+
+### Skills and Interests
+
+**Laguages**
+
+- R, MATLAB, Julia, Python
+
+**Interests**
+
+- Flowers, lifting/fitness, cats, the ocean

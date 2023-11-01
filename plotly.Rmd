@@ -1,0 +1,61 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+
+```{r}
+restaurants =
+  rest_inspec |> 
+  select(boro, inspection_date, score, grade, zipcode) |> 
+  drop_na() |> 
+  filter(boro != c('Missing')) |> 
+  filter(grade != c('Z')) |> 
+  filter(grade != c('P')) |>
+  filter(grade != c('Not Yet Graded'))
+```
+
+```{r}
+
+scatter_manhattan = restaurants |> 
+  filter(boro == "MANHATTAN") |> 
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~score,
+    type = "scatter", mode = "markers", alpha = 0.5)
+
+scatter_manhattan
+
+```
+
+```{r}
+box_brooklyn = restaurants |> 
+  filter(boro == "BROOKLYN") |> 
+  plot_ly(y = ~score, type = "box", colors = "viridis")
+
+box_brooklyn
+```
+
+```{r}
+bar_queens = restaurants |> 
+  filter(boro == "QUEENS") |> 
+  count(grade) |> 
+  mutate(grade = fct_reorder(grade, n)) |> 
+  plot_ly(
+    x = ~grade, y = ~n, color = ~grade,
+    type = "bar", colors = "viridis")
+
+bar_queens
+```
+
+
+
+

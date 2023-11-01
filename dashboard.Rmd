@@ -1,0 +1,63 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+library(flexdashboard)
+```
+
+```{r}
+restaurants =
+  rest_inspec |> 
+  select(boro, inspection_date, score, grade, zipcode) |> 
+  drop_na() |> 
+  filter(boro != c('Missing')) |> 
+  filter(grade != c('Z')) |> 
+  filter(grade != c('P')) |>
+  filter(grade != c('Not Yet Graded'))
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Scatterplot of Restaurant Scores in Manhattan
+
+```{r}
+restaurants |> 
+  filter(boro == "MANHATTAN") |> 
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~score,
+    type = "scatter", mode = "markers", alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Box Plot of Restaurant Inspection Scores in Brooklyn
+
+```{r}
+restaurants |> 
+  filter(boro == "BROOKLYN") |> 
+  plot_ly(y = ~score, type = "box", colors = "viridis")
+```
+
+### Bar Chart of Resturant Inspection Grade Count for Queens Restaurants
+
+```{r}
+restaurants |> 
+  filter(boro == "QUEENS") |> 
+  count(grade) |> 
+  mutate(grade = fct_reorder(grade, n)) |> 
+  plot_ly(
+    x = ~grade, y = ~n, color = ~grade,
+    type = "bar", colors = "viridis")
+```
+

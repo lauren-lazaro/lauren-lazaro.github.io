@@ -4,11 +4,15 @@ navbar:
   title: "Home"
   right:
     - text: "About"
-      href: about.html
+      href: index.html
+    - text: "Plotly"
+      href: plotly.html
+    - text: "Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<laurenlazaro4@gmail.com>
     - icon: fa-github fa-lg
       href: https://github.com/lauren-lazaro
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
