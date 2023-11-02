@@ -31,7 +31,13 @@ Column {data-width=650}
 ### Scatterplot of Restaurant Scores in Manhattan by Date of Inspection
 
 ```{r}
-
+restaurants |> 
+  filter(boro == "MANHATTAN") |> 
+  plot_ly(
+    x = ~inspection_date, y = ~score,
+    type = "scatter", mode = "markers", alpha = 0.5) |> 
+  layout(xaxis = list(title = 'Date of Inspection')) |> 
+  layout(yaxis = list(title = 'Inspection Score'))
 ```
 
 Column {data-width=350}
