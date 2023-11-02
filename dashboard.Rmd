@@ -28,14 +28,18 @@ restaurants =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Scatterplot of Restaurant Scores in Manhattan
+### Scatterplot of Restaurant Scores in Manhattan by Date of Inspection
 
 ```{r}
 restaurants |> 
   filter(boro == "MANHATTAN") |> 
   plot_ly(
-    x = ~inspection_date, y = ~score, color = ~score,
-    type = "scatter", mode = "markers", alpha = 0.5)
+    x = ~inspection_date, y = ~score,
+    type = "scatter", mode = "markers", alpha = 0.5) |> 
+  layout(xaxis = list(title = 'Date of Inspection')) |> 
+  layout(yaxis = list(title = 'Inspection Score'))
+
+
 ```
 
 Column {data-width=350}
@@ -46,10 +50,12 @@ Column {data-width=350}
 ```{r}
 restaurants |> 
   filter(boro == "BROOKLYN") |> 
-  plot_ly(y = ~score, type = "box", colors = "viridis")
+  plot_ly(y = ~score, type = "box", colors = "viridis") |> 
+  layout(xaxis = list(title = 'Brooklyn Restaurant Inspection Scores')) |> 
+  layout(yaxis = list(title = 'Inspection Score'))
 ```
 
-### Bar Chart of Resturant Inspection Grade Count for Queens Restaurants
+### Bar Chart of Inspection Grade Count for Queens Restaurants
 
 ```{r}
 restaurants |> 
@@ -58,6 +64,8 @@ restaurants |>
   mutate(grade = fct_reorder(grade, n)) |> 
   plot_ly(
     x = ~grade, y = ~n, color = ~grade,
-    type = "bar", colors = "viridis")
+    type = "bar", colors = "viridis") |> 
+  layout(xaxis = list(title = 'Inspection Grade')) |> 
+  layout(yaxis = list(title = 'Count'))
 ```
 
